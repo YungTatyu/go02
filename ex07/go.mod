@@ -1,3 +1,3 @@
-module ex06
+module ex07
 
 go 1.23
