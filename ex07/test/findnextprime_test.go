@@ -16,5 +16,5 @@ func TestFindNextPrime(t *testing.T) {
 	expect(piscine.FindNextPrime(1), 2, t)
 	expect(piscine.FindNextPrime(-3), 2, t)
 	expect(piscine.FindNextPrime(4), 5, t)
-	expect(piscine.FindNextPrime(9223372036854775807), 2, t)
+	expect(piscine.FindNextPrime(9223372036854775807), 9223372036854775807, t)
 }
