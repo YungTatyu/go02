@@ -21,6 +21,6 @@ fclean:	clean
 re:	fclean	all
 
 format:
-	go fmt ./...
+	gofmt -s -w .
 
 .PHONY: all clean fclean re test format
