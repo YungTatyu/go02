@@ -30,5 +30,9 @@ func TestIterativeFactorial(t *testing.T) {
 	expect(piscine.IsPrime(37), true, t)
 	expect(piscine.IsPrime(41), true, t)
 	expect(piscine.IsPrime(43), true, t)
-	expect(piscine.IsPrime(9223372036854775807), true, t)
+	expect(piscine.IsPrime(529), false, t)
+	expect(piscine.IsPrime(899), false, t)
+	expect(piscine.IsPrime(841), false, t)
+	expect(piscine.IsPrime(270348), false, t)
+	expect(piscine.IsPrime(9223372036854775807), false, t)
 }
