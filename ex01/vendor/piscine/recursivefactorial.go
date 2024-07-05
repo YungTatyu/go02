@@ -6,11 +6,11 @@ const (
 )
 
 func RecursiveFactorial(nb int) int {
+	if nb < 0 {
+		return 0
+	}
 	if nb == 0 {
 		return 1
-	}
-	if nb < 0 {
-		return -RecursiveFactorial(-nb)
 	}
 	re := RecursiveFactorial(nb - 1)
 	if re > (IntMax / nb) {
