@@ -13,7 +13,7 @@ func expect(actual, expect int, t *testing.T) {
 
 func TestIterativeFactorial(t *testing.T) {
 	expect(piscine.Sqrt(0), 0, t)
-	expect(piscine.Sqrt(1), 0, t)
+	expect(piscine.Sqrt(1), 1, t)
 	expect(piscine.Sqrt(-3), 0, t)
 	expect(piscine.Sqrt(2), 0, t)
 	expect(piscine.Sqrt(4), 2, t)

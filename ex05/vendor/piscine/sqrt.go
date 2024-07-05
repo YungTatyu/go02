@@ -9,7 +9,7 @@ func Sqrt(nb int) int {
 	if nb < 0 {
 		return 0
 	}
-	for i := 1; i < (nb/2 + 1); i++ {
+	for i := 1; i <= (nb/2 + 1); i++ {
 		if i > (IntMax / i) {
 			return 0
 		}
